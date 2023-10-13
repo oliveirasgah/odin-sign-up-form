@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Gerhana Matahari';
+    src:
+        url('font/GerhanaMatahari.woff2') format('woff2'),
+        url('font/GerhanaMatahari.woff') format('woff');
+    font-weight: 400;
+}
+
+:root {
+    font-family: 'Gerhana Matahari', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
