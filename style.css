@@ -26,4 +26,12 @@ body {
     color: var(--font-color);
 
     display: flex;
+    height: 100vh;
+}
+
+.page-header {
+    background-image: url('img/eclipse-image-flipped.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -200px;
 }
