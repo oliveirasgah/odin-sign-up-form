@@ -221,3 +221,8 @@ form button:active {
     color: var(--link-hover);
     text-decoration: underline wavy;
 }
+
+.not-real {
+    font-size: 10px;
+    font-weight: 600;
+}
