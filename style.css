@@ -173,6 +173,10 @@ body {
     margin-top: 5px;
 }
 
+.form-field input:invalid {
+    border-color: red;
+}
+
 form button {
     margin-left: 30px;
 
