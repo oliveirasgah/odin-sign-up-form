@@ -7,11 +7,19 @@
 }
 
 :root {
-    font-family: 'Gerhana Matahari', sans-serif;
+    --font-family: 'Gerhana Matahari', sans-serif;
 
     --background-image: url('img/eclipse-image-flipped.jpg');
     --background-color: #303030;
+    --form-background-color: #202020;
     --font-color: #f0f0f0;
+
+    --highlight-color: #8f508f;
+    --highlight-hover: #7f407f;
+    --highlight-active: #5f205f;
+
+    --link-color: #ff8fff;
+    --link-hover: #df6fdf;
 }
 
 *,
@@ -23,6 +31,7 @@
 }
 
 body {
+    font-family: var(--font-family);
     background-image: var(--background-image);
     background-repeat: no-repeat;
     background-size: auto 100vh;
@@ -89,4 +98,118 @@ body {
     
     width: 100%;
     min-width: calc(1280px - 450px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.description {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.form-main {
+    background-color: var(--form-background-color);
+    padding: 15px 0 15px 30px;
+}
+
+.form-row {
+    display: flex;
+    gap: 50px;
+    margin: 15px 0;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.form-field input[type='text'],
+.form-field input[type='email'],
+.form-field input[type='tel'],
+.form-field input[type='password'],
+.form-field select
+ {
+    font-size: 16px;
+    font-family: var(--font-family);
+
+    padding: 5px 3px;
+    border: 2px solid var(--highlight-color);
+    border-radius: 5px;
+}
+
+.form-row select:after {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--highlight-color);
+}
+
+.form-field label,
+.fieldset-form-row legend {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.fieldset-form-row input[type='radio'],
+.form-row input[type='checkbox'] {
+    accent-color: var(--highlight-color);
+}
+
+.fieldset-form-row {
+    border: none;
+    width: 300px;
+}
+
+.radio-row {
+    margin-top: 5px;
+}
+
+form button {
+    margin-left: 30px;
+
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--font-color);
+    letter-spacing: 1px;
+
+    padding: 10px;
+    border: 1px solid var(--highlight-active);
+    border-radius: 10px;
+    background-color: var(--highlight-color);
+
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--highlight-hover);
+}
+
+form button:active {
+    background-color: var(--highlight-active);
+}
+
+.login-text {
+    margin-left: 30px;
+    font-size: 14px;
+}
+
+.login-text a,
+.form-row a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.login-text a:hover,
+.form-row a:hover {
+    color: var(--link-hover);
+    text-decoration: underline wavy;
 }

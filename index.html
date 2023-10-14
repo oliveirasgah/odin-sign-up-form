@@ -30,86 +30,86 @@
         </p>
 
         <form action="#" method="post">
-            <h2>Are you prepared?!</h2>
-
-            <div class="form-row">
-                <div class="form-field">
-                    <label for="first-name">First name</label>
-                    <input type="text" name="first-name" id="first-name">
+            <div class="form-main">
+                <h2>Are you prepared?!</h2>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="first-name">First name</label>
+                        <input type="text" name="first-name" id="first-name">
+                    </div>
+                    <div class="form-field">
+                        <label for="last-name">Last name</label>
+                        <input type="text" name="last-name" id="last-name">
+                    </div>
                 </div>
-
-                <div class="form-field">
-                    <label for="last-name">Last name</label>
-                    <input type="text" name="last-name" id="last-name">
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="form-field">
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
                 </div>
-            </div>
-
-            <div class="form-row">
-                <div class="form-field">
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email">
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="pass">Password</label>
+                        <input type="password" name="pass" id="pass" minlength="8">
+                    </div>
+                    <div class="form-field">
+                        <label for="confirm-pass">Confirm password</label>
+                        <input type="password" name="confirm-pass" id="confirm-pass" minlength="8">
+                    </div>
                 </div>
+                <div class="form-row">
+                    <fieldset class="fieldset-form-row">
+                        <legend>Gender</legend>
 
-                <div class="form-field">
-                    <label for="phone">Phone</label>
-                    <input type="tel" name="phone" id="phone">
+                        <div class="radio-row">
+                            <input type="radio" name="sex" id="sex-male">
+                            <label for="sex-male">Male</label>
+                        </div>
+
+                        <div class="radio-row">
+                            <input type="radio" name="sex" id="sex-female">
+                            <label for="sex-female">Female</label>
+                        </div>
+
+                        <div class="radio-row">
+                            <input type="radio" name="sex" id="sex-other">
+                            <label for="sex-other">Other / Prefer not to say</label>
+                        </div>
+                    </fieldset>
+                    <div class="form-field">
+                        <label for="t-shirt">T-Shirt Size</label>
+                        <select name="t-shirt" id="t-shirt">
+                            <option value="xs">Extra Small</option>
+                            <option value="s">Small</option>
+                            <option value="m">Medium</option>
+                            <option value="l">Large</option>
+                            <option value="xl">Extra Large</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-
-            <div class="form-row">
-                <div class="form-field">
-                    <label for="pass">Password</label>
-                    <input type="password" name="pass" id="pass" minlength="8">
+                <div class="form-row">
+                    <label for="terms-of-service">
+                        <input type="checkbox" name="terms-of-service" id="terms-of-service" value="agreed">
+                        <span>
+                            I agree with the <a href="#">Terms of Service</a>
+                        </span>
+                    </label>
                 </div>
-
-                <div class="form-field">
-                    <label for="confirm-pass">Confirm password</label>
-                    <input type="password" name="confirm-pass" id="confirm-pass" minlength="8">
-                </div>
-            </div>
-
-            <div class="form-row">
-                <fieldset class="fieldset-form-row">
-                    <legend>Gender</legend>
-
-                    <input type="radio" name="sex" id="sex-male">
-                    <label for="sex-male">Male</label>
-
-                    <input type="radio" name="sex" id="sex-female">
-                    <label for="sex-female">Female</label>
-
-                    <input type="radio" name="sex" id="sex-other">
-                    <label for="sex-other">Other / Prefer not to say</label>
-                </fieldset>
-
-                <div class="form-field">
-                    <label for="t-shirt">T-Shirt Size</label>
-                    <select name="t-shirt" id="t-shirt">
-                        <option value="xs">Extra Small</option>
-                        <option value="s">Small</option>
-                        <option value="m">Medium</option>
-                        <option value="l">Large</option>
-                        <option value="xl">Extra Large</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="form-row">
-                <label for="terms-of-service">
-                    <input type="checkbox" name="terms-of-service" id="terms-of-service" value="agreed">
-                    <span>
-                        I agree with the <a href="#">Terms of Service</a>
-                    </span>
-                </label>
             </div>
 
             <div class="form-row">
                 <button type="submit">Subscribe</button>
             </div>
-        </form>
-        <p class="login-text">
-            Are you already subscribed?
+
+            <p class="login-text">
+                Already subscribed?
             <a href="#">Log In</a>
+        </form>
         </p>
     </main>
 </body>
