@@ -117,7 +117,7 @@ body {
 .form-row {
     display: flex;
     gap: 50px;
-    margin: 15px 0;
+    margin: 25px 0;
 }
 
 .form-field {
