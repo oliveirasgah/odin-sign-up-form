@@ -33,5 +33,12 @@ body {
     background-image: url('img/eclipse-image-flipped.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: -200px;
+    background-position-x: -10vw;
+
+    width: 450px;
+    flex-shrink: 0;
+}
+
+.main-content {
+    min-width: calc(1280px - 450px);
 }
