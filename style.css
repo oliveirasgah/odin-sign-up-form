@@ -101,12 +101,12 @@ body {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .description {
     font-size: 20px;
-    margin-left: 30px;
+    margin: 0 30px 15px;
 }
 
 .form-main {
