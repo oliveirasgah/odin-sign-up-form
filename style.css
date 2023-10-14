@@ -155,6 +155,10 @@ body {
     letter-spacing: 3px;
 }
 
+.form-field label span {
+    font-weight: bold;
+}
+
 .fieldset-form-row input[type='radio'],
 .form-row input[type='checkbox'] {
     accent-color: var(--highlight-color);
