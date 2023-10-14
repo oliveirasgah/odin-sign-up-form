@@ -9,6 +9,7 @@
 :root {
     font-family: 'Gerhana Matahari', sans-serif;
 
+    --background-image: url('img/eclipse-image-flipped.jpg');
     --background-color: #303030;
     --font-color: #f0f0f0;
 }
@@ -22,6 +23,11 @@
 }
 
 body {
+    background-image: var(--background-image);
+    background-repeat: no-repeat;
+    background-size: auto 100vh;
+    background-position-x: -10vw;
+
     background-color: var(--background-color);
     color: var(--font-color);
     font-size: 16px;
@@ -31,11 +37,6 @@ body {
 }
 
 .page-header {
-    background-image: url('img/eclipse-image-flipped.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: -10vw;
-
     width: 450px;
     flex-shrink: 0;
 
@@ -83,5 +84,9 @@ body {
 }
 
 .main-content {
+    background-color: var(--background-color);
+    border-radius: 35px 0 0 35px;
+    
+    width: 100%;
     min-width: calc(1280px - 450px);
 }
