@@ -24,6 +24,7 @@
 body {
     background-color: var(--background-color);
     color: var(--font-color);
+    font-size: 16px;
 
     display: flex;
     height: 100vh;
@@ -37,6 +38,48 @@ body {
 
     width: 450px;
     flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.title-content {
+    width: 100%;
+    background-color: #30303090;
+    padding: 15px 0;
+    margin: auto;
+}
+
+.title img {
+    width: 75px;
+    margin-bottom: 5px;
+}
+
+.title h1 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.sub-date {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.image-credits {
+    font-size: 10px;
+    margin-bottom: 10px;
 }
 
 .main-content {
